@@ -28,12 +28,7 @@ If you’re using this demo, please **★Star** this repository to show your int
 | Jaeger UI                                                                                                         | Trace View                                                                                                    |
 | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
 | [![Screenshot of Jaeger UI](./docs/img/jaeger-ui.png)](./docs/img/jaeger-ui.png) | [![Screenshot of Trace View](./docs/img/jaeger-trace-view.png)](./docs/img/jaeger-trace-view.png) |
-
-## Quickstart (GKE)
-
-If you'd like to follow Google's quickstart to deploy the sample in GKE,  please refer to [the original repository](https://github.com/GoogleCloudPlatform/microservices-demo#quickstart-gke).    
-This repository will work with skaffold in the same way.  
-
+  
 ## Quickstart (Local with Docker)
 **Docker is required.**  
 If you want to test it locally without a kubernetes cluster, you can follow the steps below.
@@ -104,6 +99,10 @@ Here is an example using AWS ECR:
 ```
 skaffold dev --default-repo=public.ecr.aws/<your_registry_here
 ```
+## Quickstart (GKE)
+
+If you'd like to follow Google's quickstart to deploy the sample in GKE,  please refer to [the original repository](https://github.com/GoogleCloudPlatform/microservices-demo#quickstart-gke).    
+This repository will work with skaffold in the same way.
 
 ## Architecture
 
