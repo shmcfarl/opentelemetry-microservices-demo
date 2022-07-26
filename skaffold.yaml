@@ -51,6 +51,7 @@ build:
   local:
     useBuildkit: false
 deploy:
+  statusCheckDeadlineSeconds: 300
   kubectl:
     manifests:
     - ./kubernetes-manifests/adservice.yaml
