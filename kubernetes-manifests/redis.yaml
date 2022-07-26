@@ -28,12 +28,12 @@ spec:
       securityContext:
         fsGroup: 1000
         runAsGroup: 1000
-        runAsNonRoot: false # change to false if dns-detector breaks on panoptica
+        runAsNonRoot: false
         runAsUser: 1000
       containers:
       - name: redis
         securityContext:
-          allowPrivilegeEscalation: true # change to true if dns-detector breaks on panoptica
+          allowPrivilegeEscalation: true
           capabilities:
             drop:
               - all
