@@ -89,12 +89,20 @@ eb39e7c3ff04   jaegertracing/all-in-one:1.30   "/go/bin/all-in-one-…"   43 sec
 To kill all containers, simply run [hack/kill-containers.sh.](hack/kill-containers.sh)
 
 ```
-./kill-containers.sh
+hack/./kill-containers.sh
 ```
 
-## Other Deployment Options
+## Kubernetes
 
-If you'd like to check other deployment options,  please refer to [the original repository](https://github.com/GoogleCloudPlatform/microservices-demo#other-deployment-options).  
+1. **If you are using a locally hosted cluster such as KinD, Skaffold will build and push images to the local cluster**:
+```
+skaffold dev
+```
+2. **If you are deploying against a remote cluster such as GKE, EKS, AKS, etc., you will need to host a public registry for Skaffold to use to push images to. Once you create the repo for each service, point Skaffold at that registry**:
+Here is an example using AWS ECR:
+```
+skaffold dev --default-repo=public.ecr.aws/<your_registry_here
+```
 
 ## Architecture
 
