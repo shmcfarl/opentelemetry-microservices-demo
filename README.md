@@ -4,7 +4,7 @@
 
 ---
 
-## This repo was modified and it is used to demonstrate OpenTelemetry capabilities
+## This repo was modified and it is used to demonstrate OpenTelemetry capabilities and to use the OTel Collector to send tracing data to the telescope.app back-end service.
 All the services had their OpenCensus, Cloud Operations (Stackdriver) removed. Only OpenTelemetry Traces were added.   
 
 ---
@@ -40,7 +40,7 @@ If you want to test it locally without a kubernetes cluster, you can follow the 
 1. **Clone this repository.**
 
 ```
-git clone https://github.com/julianocosta89/opentelemetry-microservices-demo.git
+git clone https://github.com/shmcfarl/opentelemetry-microservices-demo.git
 cd opentelemetry-microservices-demo
 ```
 
