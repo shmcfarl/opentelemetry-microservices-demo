@@ -99,6 +99,7 @@ hack/./kill-containers.sh
 skaffold dev
 ```
 2. **If you are deploying against a remote cluster such as GKE, EKS, AKS, etc., you will need to host a public registry for Skaffold to use to push images to. Once you create the repo for each service, point Skaffold at that registry**:
+
 Here is an example using AWS ECR:
 ```
 skaffold dev --default-repo=public.ecr.aws/<your_registry_here
