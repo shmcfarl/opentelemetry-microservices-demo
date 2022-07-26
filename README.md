@@ -4,9 +4,9 @@
 
 ---
 
-## This repo is a fork from @julianocosta89's repo and I have added features/capabilities to Julian's base. Thanks to Julian for doing the initial OTel instrumentation work and adding the OTel Collector and Jaeger deployment configs. I have added the Telescope OTel Collector configuration (for use with https://telescope.app) and I have updated the Cart and Redis deployment YAML files to work with the Panoptica (https://panoptica.app) RBAC security features.
+## This repo is a fork from @julianocosta89's repo and I have added features/capabilities to Juliano's base. Thanks to Juliano for doing the initial OTel instrumentation work and adding the OTel Collector and Jaeger deployment configs. I have added the Telescope OTel Collector configuration (for use with https://telescope.app) and I have updated the Cart and Redis deployment YAML files to work with the Panoptica (https://panoptica.app) RBAC security features.
 
-Julian removed the OpenCensus, Cloud Operations (Stackdriver) configurations and added the OpenTelemetry instrumentation.   
+Juliano removed the OpenCensus, Cloud Operations (Stackdriver) configurations and added the OpenTelemetry instrumentation.   
 
 ---
 
