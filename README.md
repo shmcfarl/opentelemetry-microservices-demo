@@ -4,8 +4,9 @@
 
 ---
 
-## This repo was modified and it is used to demonstrate OpenTelemetry capabilities and to use the OTel Collector to send tracing data to the telescope.app back-end service.
-All the services had their OpenCensus, Cloud Operations (Stackdriver) removed. Only OpenTelemetry Traces were added.   
+## This repo is a fork from @julianocosta89's repo and I have added features/capabilities to Julian's base. Thanks to Julian for doing the initial OTel instrumentation work and adding the OTel Collector and Jaeger deployment configs. I have added the Telescope OTel Collector configuration (for use with https://telescope.app) and I have updated the Cart and Redis deployment YAML files to work with the Panoptica (https://panoptica.app) RBAC security features.
+
+Julian removed the OpenCensus, Cloud Operations (Stackdriver) configurations and added the OpenTelemetry instrumentation.   
 
 ---
 
@@ -132,7 +133,7 @@ Find **Protocol Buffers Descriptions** at the [`./pb` directory](./pb).
   All services are instrumented using OpenTelemetry available instrumentation libraries.
 - **[OpenTelemetry Collector](https://opentelemetry.io/docs/collector/getting-started):**  
   All services are instrumented and sending the generated traces to the OpenTelemetry Collector via gRPC. The received traces are then exported to the logs and to Jaeger.
-- **[Jager](https://www.jaegertracing.io):**  
+- **[Jaeger](https://www.jaegertracing.io):**  
   All generated traces are being sent to Jaeger.
 - **[Skaffold](https://skaffold.dev):**  
   Application is deployed to Kubernetes with a single command using Skaffold.
